@@ -1,3 +1,5 @@
+import React from "react";
+
 import { ActionIcon, CopyButton, Group, Tooltip } from "@mantine/core";
 import { IconCopy } from "@tabler/icons";
 

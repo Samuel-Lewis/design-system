@@ -1,4 +1,5 @@
 import React from "react";
+
 import { ThemeToggle as ThemeToggleComponent } from "@samuel-lewis/components";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 

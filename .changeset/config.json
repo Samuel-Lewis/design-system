@@ -2,9 +2,10 @@
   "$schema": "https://unpkg.com/@changesets/config@2.0.0/schema.json",
   "changelog": "@changesets/cli/changelog",
   "commit": false,
-  "fixed": [],
+  "fixed": [["@samuel-lewis/*"]],
   "linked": [],
   "access": "public",
   "updateInternalDependencies": "patch",
-  "ignore": ["@samuel-lewis/docs"]
+  "ignore": ["@samuel-lewis/docs"],
+  "baseBranch": "main"
 }

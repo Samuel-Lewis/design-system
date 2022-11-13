@@ -1,0 +1,4 @@
+{
+  "extends": "@samuel-lewis/tsconfig/vite.json",
+  "include": ["src"]
+}

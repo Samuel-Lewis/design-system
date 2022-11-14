@@ -1,5 +1,11 @@
 # @samuel-lewis/components
 
+## 0.0.4
+
+### Patch Changes
+
+- a196246: Fixed ThemeToggle actually toggling the theme
+
 ## 0.0.3
 
 ## 0.0.2

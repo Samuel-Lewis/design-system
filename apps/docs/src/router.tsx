@@ -1,9 +1,15 @@
-import React from "react";
 import { createHashRouter, Outlet } from "react-router-dom";
 
 import { App } from "./App";
-import { Copyable } from "./components";
 import { ErrorPage } from "./pages";
+import { ComponentsIndex } from "./pages/ComponentsIndex";
+import { registry } from "./registry";
+import { Story } from "./Story";
+
+const storyElements = registry.map((item) => ({
+  path: item.absolutePath,
+  element: <Story {...item} />,
+}));
 
 export const router = createHashRouter([
   {
@@ -18,11 +24,8 @@ export const router = createHashRouter([
           {
             path: "/components",
             children: [
-              { index: true, element: <div>components</div> },
-              {
-                path: "copyable",
-                element: <Copyable />,
-              },
+              { index: true, element: <ComponentsIndex /> },
+              ...storyElements,
             ],
           },
         ],

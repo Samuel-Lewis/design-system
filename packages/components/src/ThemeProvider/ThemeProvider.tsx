@@ -40,7 +40,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
         withCSSVariables
         withGlobalStyles
         withNormalizeCSS
-        theme={{ ...defaultTheme, ...themeOverride }}
+        theme={{ ...defaultTheme, colorScheme, ...themeOverride }}
       >
         {children}
       </MantineProvider>

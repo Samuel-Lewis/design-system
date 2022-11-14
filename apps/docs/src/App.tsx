@@ -1,8 +1,9 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
 
-import { AppShell, Group, Header, Navbar, Title } from "@mantine/core";
+import { AppShell, Group, Header, Title } from "@mantine/core";
 import { ThemeProvider, ThemeToggle } from "@samuel-lewis/components";
+
+import { NavigationBar } from "./components/NavigationBar";
 
 export const App = () => {
   return (
@@ -18,12 +19,7 @@ export const App = () => {
             </Group>
           </Header>
         }
-        navbar={
-          <Navbar width={{ base: 300 }} p="xs">
-            {/* Navbar content */}
-            hello there
-          </Navbar>
-        }
+        navbar={<NavigationBar />}
       >
         <Outlet />
       </AppShell>

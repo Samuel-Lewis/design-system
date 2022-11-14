@@ -6,23 +6,19 @@ import { IconCopy } from "@tabler/icons";
 export interface CopyableProps {
   value: string;
   children: React.ReactNode;
-  labels?: {
-    copy?: string;
-    copied?: string;
-  };
+  copyLabel?: string;
+  copiedLabel?: string;
 }
 
 export const Copyable: React.FC<CopyableProps> = ({
   value,
   children,
-  labels,
+  copyLabel = "Copy",
+  copiedLabel = "Copied",
 }) => {
   if (value === "") {
     return <>{children}</>;
   }
-
-  const copiedLabel = labels?.copied || "Copied";
-  const copyLabel = labels?.copy || "Copy";
 
   return (
     <Group spacing="xs">

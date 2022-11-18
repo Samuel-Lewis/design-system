@@ -5,10 +5,15 @@
     "config:base",
     "group:linters",
     "npm:unpublishSafe",
+    "packages:react",
+    "packages:eslint",
     "workarounds:typesNodeVersioning",
     ":separateMultipleMajorReleases",
     ":automergeMinor",
-    ":automergeBranch"
+    ":automergeBranch",
+    ":skipStatusChecks",
+    ":prHourlyLimitNone",
+    ":prConcurrentLimitNone"
   ],
   "postUpdateOptions": ["yarnDedupeHighest"],
   "rangeStrategy": "bump",

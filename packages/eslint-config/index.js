@@ -1,10 +1,28 @@
 module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
+  },
   extends: [
     "eslint:recommended",
-    "plugin:jsx-a11y/recommended",
-    "next",
     "turbo",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended",
+  ],
+  plugins: [
+    "import",
+    "jsx-a11y",
     "prettier",
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
   ],
   parser: "@typescript-eslint/parser",
   settings: {
@@ -16,10 +34,7 @@ module.exports = {
     },
   },
   rules: {
-    "@next/next/no-html-link-for-pages": "off",
-    "import/first": "error",
     "import/newline-after-import": "error",
-    "import/no-anonymous-default-export": "error",
     "import/no-default-export": "error",
     "import/no-extraneous-dependencies": "error",
     "import/no-nodejs-modules": "error",

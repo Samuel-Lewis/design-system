@@ -9,7 +9,7 @@ import { registry } from "../registry";
 export interface NavigationBarProps {}
 
 export const NavigationBar: React.FC<NavigationBarProps> = () => {
-  let location = useLocation();
+  const location = useLocation();
 
   const items = registry.map((item) => (
     <NavLink
@@ -19,17 +19,25 @@ export const NavigationBar: React.FC<NavigationBarProps> = () => {
       to={item.absolutePath}
       active={location.pathname === item.absolutePath}
       variant="filled"
+      p="xs"
+      sx={(theme) => ({
+        borderLeft: `1px solid ${theme.colors.gray[6]}`,
+      })}
     />
   ));
 
   return (
-    <Navbar width={{ base: 300 }} p="xs">
+    <Navbar width={{ base: 300 }}>
       <NavLink
         label="Components"
         icon={<IconComponents size={16} stroke={1.5} />}
         active={location.pathname.startsWith("/components")}
         defaultOpened={location.pathname.startsWith("/components")}
         variant={location.pathname === "/components" ? "filled" : undefined}
+        p="md"
+        sx={(theme) => ({
+          borderRadius: theme.radius.sm,
+        })}
       >
         {items}
       </NavLink>

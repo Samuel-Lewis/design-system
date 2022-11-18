@@ -1,7 +1,7 @@
 import React from "react";
 
-import { ActionIcon, CopyButton, Group, Tooltip } from "@mantine/core";
-import { IconCopy } from "@tabler/icons";
+import { ActionIcon, CopyButton, Group, Paper, Tooltip } from "@mantine/core";
+import { IconCheck, IconCopy } from "@tabler/icons";
 
 export interface CopyableProps {
   value: string;
@@ -14,26 +14,27 @@ export const Copyable: React.FC<CopyableProps> = ({
   value,
   children,
   copyLabel = "Copy",
-  copiedLabel = "Copied",
+  copiedLabel = "Copied 🎉",
 }) => {
   if (value === "") {
     return <>{children}</>;
   }
 
   return (
-    <Group spacing="xs">
-      <CopyButton value={value}>
-        {({ copied, copy }) => (
-          <Tooltip label={copied ? copiedLabel : copyLabel}>
-            <ActionIcon onClick={copy}>
-              <IconCopy size={16} />
-            </ActionIcon>
-          </Tooltip>
-        )}
-      </CopyButton>
-
-      {children}
-    </Group>
+    <Paper shadow="sm" p="xs" radius="md" withBorder>
+      <Group spacing="sm">
+        {children}
+        <CopyButton value={value} timeout={2000}>
+          {({ copied, copy }) => (
+            <Tooltip label={copied ? copiedLabel : copyLabel}>
+              <ActionIcon color={copied ? "teal" : "gray"} onClick={copy}>
+                {copied ? <IconCheck size={16} /> : <IconCopy size={16} />}
+              </ActionIcon>
+            </Tooltip>
+          )}
+        </CopyButton>
+      </Group>
+    </Paper>
   );
 };
 

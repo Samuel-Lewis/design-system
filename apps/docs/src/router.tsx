@@ -6,8 +6,9 @@ import { ComponentsIndex } from "./pages/ComponentsIndex";
 import { registry } from "./registry";
 import { Story } from "./Story";
 
-const storyElements = registry.map((item) => ({
+const componentRoutes = registry.map((item) => ({
   path: item.absolutePath,
+  // @ts-ignore
   element: <Story {...item} />,
 }));
 
@@ -25,7 +26,7 @@ export const router = createHashRouter([
             path: "/components",
             children: [
               { index: true, element: <ComponentsIndex /> },
-              ...storyElements,
+              ...componentRoutes,
             ],
           },
         ],

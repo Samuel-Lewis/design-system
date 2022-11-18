@@ -10,31 +10,18 @@ export interface DemoCardProps {
   showMeta?: boolean;
 }
 
-const useStyle = createStyles(
-  (theme, { showMeta }: { showMeta?: boolean }) => ({
-    card: {
-      background:
-        theme.colorScheme === "light"
-          ? theme.colors.gray[1]
-          : theme.colors.dark[4],
-      ":hover": {
-        transform: showMeta ? "translateY(-2px)" : "",
-      },
-      transition: "transform 0.2s ease",
+const useStyle = createStyles((_, { showMeta }: { showMeta?: boolean }) => ({
+  card: {
+    ":hover": {
+      transform: showMeta ? "translateY(-2px)" : "",
     },
+    transition: "transform 0.2s ease",
+  },
 
-    focus: {
-      height: 150,
-    },
-
-    label: {
-      background:
-        theme.colorScheme === "light"
-          ? theme.colors.gray[2]
-          : theme.colors.dark[5],
-    },
-  })
-);
+  focus: {
+    height: 150,
+  },
+}));
 
 export const DemoCard: React.FC<DemoCardProps> = ({
   children,
@@ -61,7 +48,7 @@ export const DemoCard: React.FC<DemoCardProps> = ({
     >
       <Center className={classes.focus}>{children}</Center>
       {showMeta && (
-        <Card.Section inheritPadding py="xs" className={classes.label}>
+        <Card.Section inheritPadding py="xs">
           <Center>
             <Group>
               <Text fw={500}>{label}</Text>

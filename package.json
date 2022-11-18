@@ -20,7 +20,7 @@
     "eslint-config-samuel-lewis": "*",
     "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
-    "prettier": "^2.5.1",
+    "prettier": "^2.7.1",
     "turbo": "latest"
   },
   "lint-staged": {

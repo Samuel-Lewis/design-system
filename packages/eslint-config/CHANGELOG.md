@@ -1,5 +1,12 @@
 # eslint-config-samuel-lewis
 
+## 0.0.5
+
+### Patch Changes
+
+- 32eb8cd: Add a11y and react-hooks. Fixed loading of recommended plugins.
+- b39d687: Remove eslint-plugin-next from defaults
+
 ## 0.0.4
 
 ## 0.0.1

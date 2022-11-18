@@ -1,5 +1,11 @@
 # @samuel-lewis/components
 
+## 0.0.5
+
+### Patch Changes
+
+- 6664eef: Copyable: Add border and move copy button
+
 ## 0.0.4
 
 ### Patch Changes

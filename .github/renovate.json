@@ -1,4 +1,3 @@
-
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
@@ -16,7 +15,13 @@
   ],
   "postUpdateOptions": ["yarnDedupeHighest"],
   "rangeStrategy": "bump",
-  "ignoreDeps": ["@samuel-lewis/components", "@samuel-lewis/utils", "@samuel-lewis/utils", "@samuel-lewis/tsconfig", "eslint-config-samuel-lewis"],
+  "ignoreDeps": [
+    "@samuel-lewis/components",
+    "@samuel-lewis/utils",
+    "@samuel-lewis/utils",
+    "@samuel-lewis/tsconfig",
+    "eslint-config-samuel-lewis"
+  ],
   "packageRules": [
     {
       "matchPackagePatterns": ["@mantine/*"],
@@ -29,4 +34,3 @@
     }
   ]
 }
-

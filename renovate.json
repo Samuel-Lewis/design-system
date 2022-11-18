@@ -1,6 +1,28 @@
+
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:base",
+    "group:linters",
+    "npm:unpublishSafe",
+    "workarounds:typesNodeVersioning",
+    ":separateMultipleMajorReleases",
+    ":automergeMinor",
+    ":automergeBranch"
+  ],
+  "postUpdateOptions": ["yarnDedupeHighest"],
+  "rangeStrategy": "bump",
+  "ignoreDeps": ["@samuel-lewis/components", "@samuel-lewis/utils", "@samuel-lewis/utils", "@samuel-lewis/tsconfig", "eslint-config-samuel-lewis"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["@mantine/*"],
+      "groupName": "mantine",
+      "groupSlug": "mantine"
+    },
+    {
+      "matchDepTypes": ["peerDependencies"],
+      "rangeStrategy": "widen"
+    }
   ]
 }
+

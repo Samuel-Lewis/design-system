@@ -841,10 +841,10 @@
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.0.5.tgz#d5c65626add4c3c185a89aa5bd38b1e42daec075"
   integrity sha512-my0Mycd+jruq/1lQuO5LBB6WTlL/e8DTCYWp44DfMTDcXz8DcTlgF0ISaLsGewt+ctHN+yA8xMq3q/N7uWJPug==
 
-"@tabler/icons@^1.116.0":
-  version "1.116.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.116.0.tgz#232df8995a593b9a88e2c7b8890ba3cc274e1468"
-  integrity sha512-uVGBj0ZBklXfzvdUq2yYmLpzsXxe0s5pgbkLGZJNLnoBoDHGaXk96uITF3yRJn9fyJu3HnOEQ14ZPP6GrUPtSg==
+"@tabler/icons@^1.116.1":
+  version "1.116.1"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.116.1.tgz#3841846e6fd07122444cafcf12de02a7c082dab4"
+  integrity sha512-Ge/UZLhkuvr6G9wJNuFBf9WX0gt8v/3nZxBOz+Od6Yj5vE7fF6ViNBcPEPBw0Y+mzuy/g+h78nwpPLVPv4yGGg==
 
 "@types/is-ci@^3.0.0":
   version "3.0.0"

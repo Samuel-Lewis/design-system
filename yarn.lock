@@ -842,10 +842,10 @@
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.2.0.tgz#54eff8306938b64c521f4a9ed313d33a91ef019a"
   integrity sha512-GO82KYYTWPRCgdNtnheaZG3LcViUlxRFlHM7ykh7N+ufoXi6PVIHoP+9RUG/vuzl2hr9i/h6EA1Eq+2HpqJ0gQ==
 
-"@tabler/icons@^1.117.0":
-  version "1.117.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.117.0.tgz#2ffafca94f868940cf84a839e284c243e095c45a"
-  integrity sha512-4UGF8fMcROiy++CCNlzTz6p22rxFQD/fAMfaw/8Uanopl41X2SCZTmpnotS3C6Qdrk99m8eMZySa5w1y99gFqQ==
+"@tabler/icons@^1.118.0":
+  version "1.118.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.118.0.tgz#8bbda4e7e3c78e4919be6794940b37c7142f223b"
+  integrity sha512-/DFANTIQBz+Moissilo47WPOp598Ht4gxvAtK0f/OC5eL8bjzxbzd4dx7d1uwf1oQ/PvaQ3Sh2UhXKP0I1D1wg==
 
 "@types/is-ci@^3.0.0":
   version "3.0.0"

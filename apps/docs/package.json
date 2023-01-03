@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
-    "@mantine/core": "^5.9.6",
-    "@mantine/form": "^5.9.6",
-    "@mantine/hooks": "^5.9.6",
+    "@mantine/core": "^5.10.0",
+    "@mantine/form": "^5.10.0",
+    "@mantine/hooks": "^5.10.0",
     "@samuel-lewis/components": "*",
     "@samuel-lewis/utils": "*",
     "@tabler/icons": "^1.119.0",

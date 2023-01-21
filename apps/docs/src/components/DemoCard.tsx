@@ -15,6 +15,7 @@ const useStyle = createStyles((_, { showMeta }: { showMeta?: boolean }) => ({
     ":hover": {
       transform: showMeta ? "translateY(-2px)" : "",
     },
+    background: "none",
     transition: "transform 0.2s ease",
   },
 

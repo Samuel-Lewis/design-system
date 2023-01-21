@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Copyable, ThemeToggle } from "@samuel-lewis/components";
+import { Copyable, DebugPanel, ThemeToggle } from "@samuel-lewis/components";
 import { camelToSlug } from "@samuel-lewis/utils";
 
 const registerComponent = <T extends React.ComponentType<any>>(
@@ -28,4 +28,10 @@ export const registry = [
     copiedLabel: "Copied",
   }),
   registerComponent(ThemeToggle),
+  registerComponent(DebugPanel, {
+    children: "It's some content",
+    title: "Fetching Error",
+    forceVisible: true,
+    isError: false,
+  }),
 ];

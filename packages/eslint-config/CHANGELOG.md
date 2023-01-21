@@ -1,5 +1,11 @@
 # eslint-config-samuel-lewis
 
+## 0.1.0
+
+### Minor Changes
+
+- 960fc86: Remove turbopack plugin
+
 ## 0.0.5
 
 ### Patch Changes

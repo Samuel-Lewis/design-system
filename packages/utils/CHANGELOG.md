@@ -1,5 +1,11 @@
 # @samuel-lewis/utils
 
+## 0.1.0
+
+### Minor Changes
+
+- 960fc86: Add array split and union methods
+
 ## 0.0.5
 
 ## 0.0.4

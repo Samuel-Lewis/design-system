@@ -12,7 +12,6 @@ import { IconAlertTriangle, IconBackhoe } from "@tabler/icons";
 export interface DebugPanelProps {
   children?: React.ReactNode;
   title?: string;
-  forceVisible?: boolean;
   debugMode?: boolean;
   isError?: boolean;
 }
@@ -34,15 +33,13 @@ const useStyle = createStyles(
 export const DebugPanel: React.FC<DebugPanelProps> = ({
   children,
   title = "Debug Information",
-  forceVisible = false,
   debugMode = false,
   isError = false,
 }) => {
   const theme = useMantineTheme();
   const { classes } = useStyle({ isError });
 
-  const show = debugMode || forceVisible;
-  if (!show || !children) {
+  if (!debugMode || !children) {
     return null;
   }
 
@@ -53,7 +50,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
   );
 
   return (
-    <Accordion variant="separated" className={classes.panel}>
+    <Accordion m="xs" variant="separated" className={classes.panel}>
       <Accordion.Item value="default">
         <Accordion.Control icon={icon}>{title}</Accordion.Control>
         <Accordion.Panel>

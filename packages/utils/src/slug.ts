@@ -12,6 +12,9 @@ const defaultSlugOptions = {
   useCamel: false,
 };
 
+/**
+ * toSlug converts a string to a url safe slug (by default)
+ */
 export const toSlug = (
   inputStr: string,
   options: SlugOptions = defaultSlugOptions
@@ -58,6 +61,9 @@ const defaultIdOptions = {
   usePostfix: false,
 };
 
+/**
+ * Takes a string and returns a URL safe slug (by default) which is prefix by a short randomly generated id
+ */
 export const uniqueSlug = (
   inputString: string,
   options: SlugOptions & IdOptions = {

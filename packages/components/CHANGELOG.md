@@ -1,5 +1,11 @@
 # @samuel-lewis/components
 
+## 0.2.0
+
+### Patch Changes
+
+- 62c2f3a: DebugPanel: Remove forceVisible prop
+
 ## 0.1.0
 
 ### Minor Changes

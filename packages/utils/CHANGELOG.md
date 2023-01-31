@@ -1,5 +1,11 @@
 # @samuel-lewis/utils
 
+## 0.2.0
+
+### Minor Changes
+
+- 2191b7f: Improve options on toSlug. Removed camelToSlug. Added uniqueSlug.
+
 ## 0.1.0
 
 ### Minor Changes

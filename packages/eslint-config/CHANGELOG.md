@@ -1,5 +1,11 @@
 # eslint-config-samuel-lewis
 
+## 0.2.0
+
+### Patch Changes
+
+- 82413d8: Allow unused vars from destructured array
+
 ## 0.1.0
 
 ### Minor Changes

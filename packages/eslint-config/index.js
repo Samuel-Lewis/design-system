@@ -33,9 +33,16 @@ module.exports = {
     },
   },
   rules: {
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { destructuredArrayIgnorePattern: "^_" },
+    ],
     "import/newline-after-import": "error",
     "import/no-default-export": "error",
-    "import/no-extraneous-dependencies": "error",
+    "import/no-extraneous-dependencies": [
+      "error",
+      { devDependencies: ["**/*.test.ts", "**/*.test.tsx"] },
+    ],
     "import/no-nodejs-modules": "error",
     "import/order": [
       "error",

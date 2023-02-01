@@ -43,21 +43,52 @@ describe("toSlug", () => {
     expect(result).toBe("cafe-e-o-combustivel-1561-programacao");
   });
 
-  test("use camelCase", () => {
-    const result = toSlug("thisIsMyContent", { useCamel: true });
-    expect(result).toBe("this-is-my-content");
-  });
-
-  test("use UpperCamelCase", () => {
-    const result = toSlug("ThisIsMyContent", { useCamel: true });
-    expect(result).toBe("this-is-my-content");
-  });
-
-  test("use UpperCamelCase with ignorecase", () => {
-    const result = toSlug("ThisIsMyContent", {
-      useCamel: true,
-      ignoreCase: true,
+  describe("camel case", () => {
+    test("use camelCase", () => {
+      const result = toSlug("thisIsMyContent", { useCamel: true });
+      expect(result).toBe("this-is-my-content");
     });
-    expect(result).toBe("This-Is-My-Content");
+
+    test("use UpperCamelCase", () => {
+      const result = toSlug("ThisIsMyContent", { useCamel: true });
+      expect(result).toBe("this-is-my-content");
+    });
+
+    test("use UpperCamelCase with ignorecase", () => {
+      const result = toSlug("ThisIsMyContent", {
+        useCamel: true,
+        ignoreCase: true,
+      });
+      expect(result).toBe("This-Is-My-Content");
+    });
+  });
+
+  test("preserves special characters if requested", () => {
+    const result = toSlug("cap$stan hogs:matey", {
+      ignoreCharacters: [":"],
+    });
+    expect(result).toBe("capstan-hogs:matey");
+  });
+
+  describe("max length", () => {
+    test("over total words", () => {
+      const result = toSlug("capstan hogs matey", {
+        maxLength: 10000,
+      });
+      expect(result).toBe("capstan-hogs-matey");
+    });
+
+    test("mid word", () => {
+      const result = toSlug("capstan hogs matey", {
+        maxLength: 7,
+      });
+      expect(result).toBe("capstan");
+    });
+    test("shorter than first word", () => {
+      const result = toSlug("capstan hogs matey", {
+        maxLength: 2,
+      });
+      expect(result).toBe("ca");
+    });
   });
 });

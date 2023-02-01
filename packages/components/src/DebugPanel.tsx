@@ -19,8 +19,6 @@ export interface DebugPanelProps {
 const useStyle = createStyles(
   (theme, { isError }: Pick<DebugPanelProps, "isError">) => ({
     panel: {
-      width: "100%",
-
       ".mantine-Accordion-item": {
         backgroundColor: isError
           ? theme.fn.rgba(theme.colors.red[9], 0.25)

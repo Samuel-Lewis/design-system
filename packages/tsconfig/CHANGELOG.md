@@ -1,5 +1,11 @@
 # @samuel-lewis/tsconfig
 
+## 0.3.1
+
+### Patch Changes
+
+- 27a97ed: toUniqueSlug: Fix unique slug exporting legacy bundle
+
 ## 0.1.0
 
 ## 0.0.5

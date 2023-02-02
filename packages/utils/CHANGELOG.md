@@ -1,5 +1,11 @@
 # @samuel-lewis/utils
 
+## 0.3.1
+
+### Patch Changes
+
+- 27a97ed: toUniqueSlug: Fix unique slug exporting legacy bundle
+
 ## 0.3.0
 
 ### Minor Changes

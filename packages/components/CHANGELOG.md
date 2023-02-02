@@ -1,5 +1,11 @@
 # @samuel-lewis/components
 
+## 0.3.0
+
+### Patch Changes
+
+- 414384a: Fix width going beyond bounds
+
 ## 0.2.0
 
 ### Patch Changes

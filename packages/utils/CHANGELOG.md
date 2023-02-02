@@ -1,5 +1,11 @@
 # @samuel-lewis/utils
 
+## 0.3.0
+
+### Minor Changes
+
+- f475e43: Add maxLength to toSlug. Fixed toUniqueSlug (fka uniqueSlug)
+
 ## 0.2.0
 
 ### Minor Changes

@@ -4,7 +4,7 @@
   "extends": "./base.json",
   "compilerOptions": {
     "lib": ["ES2020"],
-    "module": "commonjs",
+    "module": "esnext",
     "target": "ES2020"
   }
 }

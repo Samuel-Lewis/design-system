@@ -1,4 +1,16 @@
-import { toSlug } from "./slug";
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable import/no-nodejs-modules */
+// import { randomFillSync } from "crypto";
+
+import { toSlug, toUniqueSlug } from "./slug";
+
+// window.crypto = {
+//   // @ts-ignore
+//   getRandomValues(buffer) {
+//     // @ts-ignore
+//     return randomFillSync(buffer);
+//   },
+// };
 
 describe("toSlug", () => {
   test("sets to lower case", () => {
@@ -90,5 +102,12 @@ describe("toSlug", () => {
       });
       expect(result).toBe("ca");
     });
+  });
+});
+
+describe("toUniqueSlug", () => {
+  test("does it run", () => {
+    const result = toUniqueSlug("this-is-my-content");
+    expect(result).toBe("this-is-my-content");
   });
 });

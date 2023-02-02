@@ -1,5 +1,5 @@
 {
-  "extends": "@samuel-lewis/tsconfig/react-library.json",
+  "extends": "@samuel-lewis/tsconfig/vite.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

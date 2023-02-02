@@ -4,9 +4,9 @@
   "compilerOptions": {
     "strict": true,
     "jsx": "react-jsx",
-    "target": "ESNext",
+    "target": "esnext",
     "useDefineForClassFields": true,
-    "module": "ESNext",
+    "module": "esnext",
     "lib": ["ESNext", "DOM"],
     "sourceMap": true,
     "resolveJsonModule": true,

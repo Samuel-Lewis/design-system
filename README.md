@@ -41,10 +41,10 @@ const toSlug: (inputStr: string, options?: SlugOptions) => string;
 
 toSlug converts a string to a url safe slug (by default)
 
-### `uniqueSlug()`
+### `toUniqueSlug()`
 
 ```ts
-const uniqueSlug: (
+const toUniqueSlug: (
   inputString: string,
   options?: SlugOptions & IdOptions
 ) => string;

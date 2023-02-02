@@ -1,4 +1,5 @@
-import { nanoid } from "nanoid";
+import { customAlphabet } from "nanoid";
+import { alphanumeric } from "nanoid-dictionary";
 
 export type SlugOptions = {
   /**
@@ -78,9 +79,17 @@ const toSlugDefaultOptions = {
 };
 
 /**
- * toSlug converts a string to a url safe slug (by default)
+ * toSlug converts a string to a url safe slug
+ * @param inputStr - The string to be converted
+ * @param options - Options to control the conversion. Note, changing some of these options may result in non URL safe slugs.
+ * @returns inputStr as a URL safe slug
+ * @example
+ * ```ts
+ * toSlug("Prow Scuttle!!");
+ * // "prow-scuttle"
+ * ```
  */
-export const toSlug = (inputStr: string, options?: SlugOptions) => {
+export const toSlug = (inputStr: string, options?: SlugOptions): string => {
   const { separator, ignoreCase, useCamel, maxLength, ignoreCharacters } = {
     ...toSlugDefaultOptions,
     ...options,
@@ -105,7 +114,7 @@ export const toSlug = (inputStr: string, options?: SlugOptions) => {
         return [...acc, cur];
       }
 
-      const camelWords = cur.split(camelRegex);
+      const camelWords: string[] = cur.split(camelRegex);
       return [...camelWords, ...acc];
     }, [])
     .filter(String)
@@ -143,21 +152,29 @@ export type IdOptions = {
   usePostfix?: boolean;
 };
 
+const toUniqueSlugDefaultOptions = {
+  idLength: 8,
+  usePostfix: false,
+};
+
 /**
  * Takes a string and returns a URL safe slug (by default) which is prefix by a short randomly generated id
  */
 export const toUniqueSlug = (
   inputString: string,
-  options: SlugOptions & IdOptions = {
-    idLength: 5,
-    usePostfix: false,
-  }
+  options?: SlugOptions & IdOptions
 ) => {
-  const id = nanoid(options.idLength);
-  const separator = options.separator ?? "-";
-  const slugString = toSlug(inputString, options);
+  const optionsWithDefault = {
+    ...toSlugDefaultOptions,
+    ...toUniqueSlugDefaultOptions,
+    ...options,
+  };
+  const { separator, idLength, usePostfix } = optionsWithDefault;
+  const nanoid = customAlphabet(alphanumeric, idLength);
+  const id = nanoid();
+  const slugString = toSlug(inputString, optionsWithDefault);
 
-  if (options.usePostfix) {
+  if (usePostfix) {
     return `${slugString}${separator}${id}`;
   } else {
     return `${id}${separator}${slugString}`;

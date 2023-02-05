@@ -28,10 +28,16 @@ const useStyle = createStyles(
   })
 );
 
+const isDevelopment =
+  process.env.NODE_ENV === "development" ||
+  process.env.NEXT_PUBLIC_NODE_ENV === "development" ||
+  process.env.VERCEL_ENV === "development" ||
+  process.env.DEBUG === "true";
+
 export const DebugPanel: React.FC<DebugPanelProps> = ({
   children,
   title = "Debug Information",
-  debugMode = false,
+  debugMode = isDevelopment,
   isError = false,
 }) => {
   const theme = useMantineTheme();
@@ -57,6 +63,8 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
             <Text size="xs" c="dimmed">
               This error panel should only exist in DEBUG modes. If you are
               seeing this in production, please contact support.
+              <br />
+              isDevelopment: {isDevelopment.toString()}
             </Text>
           </Stack>
         </Accordion.Panel>

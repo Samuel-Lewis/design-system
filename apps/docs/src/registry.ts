@@ -1,14 +1,14 @@
 import React from "react";
 
 import { Copyable, DebugPanel, ThemeToggle } from "@samuel-lewis/components";
-import { camelToSlug } from "@samuel-lewis/utils";
+import { toSlug } from "@samuel-lewis/utils";
 
 const registerComponent = <T extends React.ComponentType<any>>(
   component: T,
   defaultProps?: React.ComponentProps<T>
 ) => {
   const name = component.displayName || component.name || "Unknown";
-  const path = `/components/${camelToSlug(name)}`;
+  const path = `/components/${toSlug(name, { useCamel: true })}`;
   const label = name.replace(/([A-Z])/g, " $1").trim();
 
   return {
@@ -31,7 +31,7 @@ export const registry = [
   registerComponent(DebugPanel, {
     children: "It's some content",
     title: "Fetching Error",
-    forceVisible: true,
     isError: false,
+    debugMode: true,
   }),
 ];

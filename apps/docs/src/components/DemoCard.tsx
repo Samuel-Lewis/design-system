@@ -20,7 +20,7 @@ const useStyle = createStyles((_, { showMeta }: { showMeta?: boolean }) => ({
   },
 
   focus: {
-    height: 150,
+    minHeight: 150,
   },
 }));
 
@@ -45,6 +45,7 @@ export const DemoCard: React.FC<DemoCardProps> = ({
       p="lg"
       radius="md"
       className={classes.card}
+      withBorder
       {...linkProps}
     >
       <Center className={classes.focus}>{children}</Center>

@@ -1,5 +1,11 @@
 # @samuel-lewis/components
 
+## 0.4.0
+
+### Minor Changes
+
+- aab9899: DebugPanel: Add auto detection if debug panel is in debug mode
+
 ## 0.3.0
 
 ### Patch Changes

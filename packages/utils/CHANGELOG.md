@@ -1,5 +1,14 @@
 # @samuel-lewis/utils
 
+## 0.4.0
+
+### Patch Changes
+
+- 6e6c0b1: toUniqueSlug: Allow zero length ids (falls back to toSlug)
+  toSlug: Fixed issue where short words were getting through the maxLength cap
+- Updated dependencies [c1f44d5]
+  - @samuel-lewis/ts-helpers@0.4.0
+
 ## 0.3.1
 
 ### Patch Changes

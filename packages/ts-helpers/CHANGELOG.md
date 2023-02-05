@@ -1,5 +1,11 @@
 # @samuel-lewis/utils
 
+## 0.4.0
+
+### Minor Changes
+
+- c1f44d5: Create new package ts-helpers
+
 ## 0.3.1
 
 ### Patch Changes

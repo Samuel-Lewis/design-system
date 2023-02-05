@@ -1,6 +1,8 @@
 import { customAlphabet } from "nanoid";
 import { alphanumeric } from "nanoid-dictionary";
 
+import type { Complete } from "@samuel-lewis/ts-helpers";
+
 export type SlugOptions = {
   /**
    * Delimiter to use between words
@@ -70,7 +72,7 @@ export type SlugOptions = {
   ignoreCharacters?: string[];
 };
 
-const toSlugDefaultOptions = {
+const toSlugDefaultOptions: Complete<SlugOptions> = {
   separator: "-",
   ignoreCase: false,
   useCamel: false,
@@ -123,19 +125,18 @@ export const toSlug = (inputStr: string, options?: SlugOptions): string => {
         return [...acc, cur];
       }
 
+      wordCountRunningTotal += cur.length;
+
       if (index === 0) {
-        wordCountRunningTotal += cur.length;
         const trimmedFirst = cur.slice(0, maxLength);
         wordCountRunningTotal = trimmedFirst.length;
         return [...acc, trimmedFirst];
       }
 
       // Trim to max length
-      const newTotal = wordCountRunningTotal + cur.length;
-      if (newTotal > maxLength) {
+      if (wordCountRunningTotal > maxLength) {
         return acc;
       }
-      wordCountRunningTotal = newTotal;
 
       return [...acc, cur];
     }, []);
@@ -150,11 +151,13 @@ export const toSlug = (inputStr: string, options?: SlugOptions): string => {
 export type IdOptions = {
   idLength?: number;
   usePostfix?: boolean;
+  alphabet?: string;
 };
 
-const toUniqueSlugDefaultOptions = {
+const toUniqueSlugDefaultOptions: Complete<IdOptions> = {
   idLength: 8,
   usePostfix: false,
+  alphabet: alphanumeric,
 };
 
 /**
@@ -169,14 +172,17 @@ export const toUniqueSlug = (
     ...toUniqueSlugDefaultOptions,
     ...options,
   };
-  const { separator, idLength, usePostfix } = optionsWithDefault;
-  const nanoid = customAlphabet(alphanumeric, idLength);
-  const id = nanoid();
-  const slugString = toSlug(inputString, optionsWithDefault);
+  if (optionsWithDefault.idLength <= 0) {
+    return toSlug(inputString, optionsWithDefault);
+  }
+
+  const { separator, idLength, usePostfix, alphabet } = optionsWithDefault;
+  const nanoid = customAlphabet(alphabet, idLength);
+  const parts = [nanoid(), toSlug(inputString, optionsWithDefault)];
 
   if (usePostfix) {
-    return `${slugString}${separator}${id}`;
-  } else {
-    return `${id}${separator}${slugString}`;
+    parts.reverse();
   }
+
+  return parts.filter(String).join(separator);
 };

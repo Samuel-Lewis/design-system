@@ -1,16 +1,4 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-/* eslint-disable import/no-nodejs-modules */
-// import { randomFillSync } from "crypto";
-
 import { toSlug, toUniqueSlug } from "./slug";
-
-// window.crypto = {
-//   // @ts-ignore
-//   getRandomValues(buffer) {
-//     // @ts-ignore
-//     return randomFillSync(buffer);
-//   },
-// };
 
 describe("toSlug", () => {
   test("sets to lower case", () => {
@@ -96,18 +84,63 @@ describe("toSlug", () => {
       });
       expect(result).toBe("capstan");
     });
+
     test("shorter than first word", () => {
       const result = toSlug("capstan hogs matey", {
         maxLength: 2,
       });
       expect(result).toBe("ca");
     });
+
+    test("really long string", () => {
+      const result = toSlug(
+        "scourge of the seven seas boatswain Schooner gaff booty. Ho Corsair red. Ensign hulk smartly boom jib rum gangway",
+        {
+          maxLength: 15,
+        }
+      );
+      expect(result).toBe("scourge-of-the");
+    });
   });
 });
 
 describe("toUniqueSlug", () => {
-  test("does it run", () => {
-    const result = toUniqueSlug("this-is-my-content");
-    expect(result).toBe("this-is-my-content");
+  const alphabet = "5";
+
+  test("adds id to a slug", () => {
+    const result = toUniqueSlug("this-is-my-content", { alphabet });
+    expect(result).toBe("55555555-this-is-my-content");
+  });
+
+  test("postfixes ID if specified", () => {
+    const result = toUniqueSlug("content", {
+      alphabet,
+      usePostfix: true,
+    });
+    expect(result).toBe("content-55555555");
+  });
+
+  test("uses specified separator", () => {
+    const result = toUniqueSlug("content", {
+      alphabet,
+      separator: ":",
+    });
+    expect(result).toBe("55555555:content");
+  });
+
+  test("allows different id lengths", () => {
+    const result = toUniqueSlug("content", {
+      alphabet,
+      idLength: 1,
+    });
+    expect(result).toBe("content-5");
+  });
+
+  test("removes the id if idLength is 0 or less", () => {
+    const result = toUniqueSlug("content", {
+      alphabet,
+      idLength: 0,
+    });
+    expect(result).toBe("content");
   });
 });

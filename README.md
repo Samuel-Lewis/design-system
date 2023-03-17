@@ -1,71 +1,19 @@
-# @samuel-lewis/utils
+# @samuel-lewis/
 
-## Array
+A collection of packages used in my own personal projects.
 
-### `split()`
+### [`@samuel-lewis/components`](/packages/components) ![](https://img.shields.io/npm/v/@samuel-lewis/components?style=flat-square&logo=npm)
 
-```ts
-const split: <T>(
-  leftValues: T[],
-  rightValues: T[]
-) => {
-  left: T[];
-  intersect: T[];
-  right: T[];
-};
-```
+Reusable React components based on the [mantine.dev](https://mantine.dev/) library.
 
-split takes two arrays, and finds unique elements between two arrays, and any common elements expects leftValues and rightValue to be sorted
+### [`@samuel-lewis/ts-helpers`](/packages/ts-helpers) ![](https://img.shields.io/npm/v/@samuel-lewis/ts-helpers?style=flat-square&logo=npm)
 
-### `divide()`
+A collection of various Typescript helper types.
 
-```ts
-const divide: <T>(
-  array: T[],
-  predicate: (t: T) => boolean
-) => {
-  included: T[];
-  excluded: T[];
-};
-```
+### [`@samuel-lewis/utils`](/packages/utils) ![](https://img.shields.io/npm/v/@samuel-lewis/utils?style=flat-square&logo=npm)
 
-divide is similar to filter, where it takes a predicate and returns a list of items that match the predicate (included). Additionally, it returns the items that do not match the predicate (excluded).
+A collection of various Javascript utilities.
 
-## Slug
+### [`eslint-config-samuel-lewis`](/packages/eslint-config) ![](https://img.shields.io/npm/v/eslint-config-samuel-lewis?style=flat-square&logo=npm)
 
-### `toSlug()`
-
-```ts
-const toSlug: (inputStr: string, options?: SlugOptions) => string;
-```
-
-toSlug converts a string to a url safe slug (by default)
-
-### `toUniqueSlug()`
-
-```ts
-const toUniqueSlug: (
-  inputString: string,
-  options?: SlugOptions & IdOptions
-) => string;
-```
-
-Takes a string and returns a URL safe slug (by default) which is prefix by a short randomly generated id
-
-## Time
-
-### `seconds()`
-
-Converts seconds to milliseconds
-
-### `minutes()`
-
-Converts minutes to milliseconds
-
-### `hours()`
-
-Converts hours to milliseconds
-
-### `days()`
-
-Converts days to milliseconds
+Highly opinionated eslint config for React.

@@ -4,5 +4,5 @@ export {
   defaultTheme,
   type ThemeProviderProps,
 } from "./ThemeProvider";
-export { ThemeToggle, type ThemeToggleProps } from "./ThemeToggle";
+export { ThemeToggle } from "./ThemeToggle";
 export { DebugPanel, type DebugPanelProps } from "./DebugPanel";

@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@samuel-lewis/tsconfig": "*",
-    "@types/react": "^18.0.29",
+    "@types/react": "^18.0.30",
     "@types/react-dom": "^18.0.11",
     "eslint": "^8.36.0",
     "eslint-config-samuel-lewis": "*",

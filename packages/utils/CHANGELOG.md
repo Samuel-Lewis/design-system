@@ -1,5 +1,16 @@
 # @samuel-lewis/utils
 
+## 0.5.0
+
+### Minor Changes
+
+- f6c7130: Major bump for Mantine and Tabler Icons
+
+### Patch Changes
+
+- Updated dependencies [f6c7130]
+  - @samuel-lewis/ts-helpers@0.5.0
+
 ## 0.4.0
 
 ### Patch Changes

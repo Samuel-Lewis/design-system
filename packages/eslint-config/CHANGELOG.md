@@ -1,5 +1,11 @@
 # eslint-config-samuel-lewis
 
+## 0.5.0
+
+### Minor Changes
+
+- f6c7130: Major bump for Mantine and Tabler Icons
+
 ## 0.4.0
 
 ## 0.2.0

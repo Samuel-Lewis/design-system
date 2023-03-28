@@ -1,7 +1,7 @@
 import React from "react";
 
 import { ActionIcon, CopyButton, Group, Paper, Tooltip } from "@mantine/core";
-import { IconCheck, IconCopy } from "@tabler/icons";
+import { IconCheck, IconCopy } from "@tabler/icons-react";
 
 export interface CopyableProps {
   value: string;

@@ -6,7 +6,7 @@ import {
   useMantineColorScheme,
   useMantineTheme,
 } from "@mantine/core";
-import { IconSun, IconMoonStars } from "@tabler/icons";
+import { IconSun, IconMoonStars } from "@tabler/icons-react";
 
 export const ThemeToggle: React.FC = () => {
   const theme = useMantineTheme();

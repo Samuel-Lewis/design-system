@@ -7,7 +7,7 @@ import {
   useMantineTheme,
   createStyles,
 } from "@mantine/core";
-import { IconAlertTriangle, IconBackhoe } from "@tabler/icons";
+import { IconAlertTriangle, IconBackhoe } from "@tabler/icons-react";
 
 export interface DebugPanelProps {
   children?: React.ReactNode;

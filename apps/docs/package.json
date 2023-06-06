@@ -15,7 +15,7 @@
     "@mantine/hooks": "^6.0.13",
     "@samuel-lewis/components": "*",
     "@samuel-lewis/utils": "*",
-    "@tabler/icons-react": "^2.21.0",
+    "@tabler/icons-react": "^2.22.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",

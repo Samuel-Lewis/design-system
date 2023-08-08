@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@samuel-lewis/tsconfig": "*",
-    "@types/react": "^18.2.18",
+    "@types/react": "^18.2.19",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^2.2.0",
     "eslint": "^8.46.0",

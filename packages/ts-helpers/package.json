@@ -20,7 +20,7 @@
   "devDependencies": {
     "@samuel-lewis/tsconfig": "*",
     "@types/jest": "^29.5.3",
-    "eslint": "^8.46.0",
+    "eslint": "^8.47.0",
     "eslint-config-samuel-lewis": "*",
     "jest": "^29.6.2",
     "ts-jest": "^29.1.1",

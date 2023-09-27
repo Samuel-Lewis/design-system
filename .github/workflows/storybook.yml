@@ -11,16 +11,23 @@ jobs:
   build-storybook:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: 🛎️ Checkout
         uses: actions/checkout@v3
         with:
           persist-credentials: false
 
-      - name: Install Dependencies 🔧
-        run: |
-          npm install
-          npm run build
-      - name: Deploy 🚀
+      - name: 🔧 Setup Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: 📦 Install Dependencies
+        run: yarn
+
+      - name: 📚 Build Storybook
+        run: yarn build
+
+      - name: 🚀 Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}

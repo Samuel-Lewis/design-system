@@ -5,6 +5,6 @@
   "fixed": [["@samuel-lewis/*", "eslint-config-samuel-lewis"]],
   "access": "public",
   "updateInternalDependencies": "patch",
-  "ignore": ["@samuel-lewis/docs"],
+  "ignore": ["@samuel-lewis/workshop"],
   "baseBranch": "main"
 }

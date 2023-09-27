@@ -1,3 +1,5 @@
+import { test, describe, expect } from "vitest";
+
 import { toSlug, toUniqueSlug } from "./slug";
 
 describe("toSlug", () => {
@@ -97,7 +99,7 @@ describe("toSlug", () => {
         "scourge of the seven seas boatswain Schooner gaff booty. Ho Corsair red. Ensign hulk smartly boom jib rum gangway",
         {
           maxLength: 15,
-        }
+        },
       );
       expect(result).toBe("scourge-of-the");
     });
@@ -133,7 +135,7 @@ describe("toUniqueSlug", () => {
       alphabet,
       idLength: 1,
     });
-    expect(result).toBe("content-5");
+    expect(result).toBe("5-content");
   });
 
   test("removes the id if idLength is 0 or less", () => {

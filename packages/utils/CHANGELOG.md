@@ -1,5 +1,16 @@
 # @samuel-lewis/utils
 
+## 0.6.0
+
+### Minor Changes
+
+- 9f1d0af: Move to Node 18.x
+
+### Patch Changes
+
+- Updated dependencies [9f1d0af]
+  - @samuel-lewis/ts-helpers@0.6.0
+
 ## 0.5.0
 
 ### Minor Changes

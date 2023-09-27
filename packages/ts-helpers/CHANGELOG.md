@@ -1,5 +1,11 @@
 # @samuel-lewis/utils
 
+## 0.6.0
+
+### Minor Changes
+
+- 9f1d0af: Move to Node 18.x
+
 ## 0.5.0
 
 ### Minor Changes

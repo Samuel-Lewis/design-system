@@ -72,3 +72,5 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
     </Accordion>
   );
 };
+
+DebugPanel.displayName = "DebugPanel";

@@ -1,6 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/node,turbo,linux,react,macos,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,turbo,linux,react,macos,windows
 
+storybook-static/
+
 ### Linux ###
 *~
 

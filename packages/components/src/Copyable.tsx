@@ -10,6 +10,9 @@ export interface CopyableProps {
   copiedLabel?: string;
 }
 
+/**
+ * Copyable is an extension of Mantine's copyable, which adds user context, tooltips and customisable messages.
+ */
 export const Copyable: React.FC<CopyableProps> = ({
   value,
   children,

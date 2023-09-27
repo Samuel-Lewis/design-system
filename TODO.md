@@ -2,7 +2,7 @@
 
 - `yarn storybook`: Builds and runs [storybook](https://storybook.js.org/)
 
-## Useful libaries
+## Useful libraries
 
 Package manager
 

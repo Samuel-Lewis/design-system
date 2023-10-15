@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@samuel-lewis/ts-helpers": "*",
-    "nanoid": "^5.0.1",
+    "nanoid": "^5.0.2",
     "nanoid-dictionary": "^5.0.0-beta.1"
   }
 }

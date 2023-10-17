@@ -1,2 +1,0 @@
-import{j as o,T as r}from"./index-4df6c60a.js";import"./index-cb9ba028.js";import"./_commonjsHelpers-725317a4.js";import"./emotion-use-insertion-effect-with-fallbacks.browser.esm-02df5838.js";import"./index-2baff29e.js";const p={parameters:{actions:{argTypesRegex:"^on[A-Z].*"},controls:{matchers:{color:/(background|color)$/i,date:/Date$/}},layout:"centered",docs:{source:{state:"open"}}},decorators:[e=>o.jsx(r,{children:o.jsx(e,{})})]};export{p as default};
-//# sourceMappingURL=preview-a045177f.js.map

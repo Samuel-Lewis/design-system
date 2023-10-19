@@ -23,7 +23,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
-    "turbo": "^1.10.15"
+    "turbo": "^1.10.16"
   },
   "lint-staged": {
     "*.@(js|ts)": [

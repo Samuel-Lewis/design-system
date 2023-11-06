@@ -26,12 +26,12 @@
   "devDependencies": {
     "@samuel-lewis/components": "*",
     "@samuel-lewis/tsconfig": "*",
-    "@storybook/addon-essentials": "^7.5.2",
-    "@storybook/addon-interactions": "^7.5.2",
-    "@storybook/addon-links": "^7.5.2",
-    "@storybook/blocks": "^7.5.2",
-    "@storybook/react-vite": "^7.5.2",
-    "@storybook/react": "^7.5.2",
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-interactions": "^7.5.3",
+    "@storybook/addon-links": "^7.5.3",
+    "@storybook/blocks": "^7.5.3",
+    "@storybook/react-vite": "^7.5.3",
+    "@storybook/react": "^7.5.3",
     "@storybook/testing-library": "^0.2.2",
     "@types/react-dom": "^18.2.14",
     "@types/react": "^18.2.36",
@@ -42,7 +42,7 @@
     "eslint-plugin-react-refresh": "^0.4.4",
     "eslint-plugin-storybook": "^0.6.15",
     "eslint": "^8.53.0",
-    "storybook": "^7.5.2",
+    "storybook": "^7.5.3",
     "typescript": "^5.2.2"
   }
 }

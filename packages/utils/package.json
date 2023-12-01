@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@samuel-lewis/tsconfig": "*",
-    "eslint": "^8.54.0",
+    "eslint": "^8.55.0",
     "eslint-config-samuel-lewis": "*",
     "tsup": "^7.3.0",
     "typescript": "^5.3.2",

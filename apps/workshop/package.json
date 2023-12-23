@@ -11,7 +11,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
+    "@emotion/react": "^11.11.3",
     "@mantine/core": "^6.0.21",
     "@mantine/form": "^6.0.21",
     "@mantine/hooks": "^6.0.21",

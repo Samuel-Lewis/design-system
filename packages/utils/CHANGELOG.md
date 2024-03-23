@@ -1,5 +1,17 @@
 # @samuel-lewis/utils
 
+## 1.0.0
+
+### Major Changes
+
+- c240116: Removed ts-helpers. gg no re
+
+### Minor Changes
+
+- 4f0294c: Bup tsup
+- 3d12998: Bump to SSR components, Mantine v7
+- 26af4c6: Change Copyable prop names. Added getOrDefault. Combined Monogram with MonogramAndName.
+
 ## 0.6.0
 
 ### Minor Changes

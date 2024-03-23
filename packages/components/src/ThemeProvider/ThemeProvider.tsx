@@ -1,51 +1,31 @@
 import React from "react";
 
 import {
-  ColorScheme,
-  ColorSchemeProvider,
   MantineProvider,
+  MantineProviderProps,
   MantineThemeOverride,
+  mergeThemeOverrides,
 } from "@mantine/core";
-import { useColorScheme, useLocalStorage } from "@mantine/hooks";
 
 import { defaultTheme } from "./theme";
 
-export interface ThemeProviderProps {
-  children: React.ReactNode;
+export interface ThemeProviderProps extends MantineProviderProps {
   themeOverride?: MantineThemeOverride;
 }
 
-export const ThemeProvider: React.FC<ThemeProviderProps> = ({
+export function ThemeProvider({
   children,
   themeOverride,
-}) => {
-  const systemColorScheme = useColorScheme();
-  // TODO: Use a cookie instead?
-  const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
-    key: "mantine-color-scheme",
-    defaultValue: systemColorScheme ?? "dark",
-  });
-
-  const toggleColorScheme = (value?: ColorScheme) => {
-    const next = value || (colorScheme === "dark" ? "light" : "dark");
-    setColorScheme(next);
-  };
-
+  ...rest
+}: ThemeProviderProps): React.ReactElement {
   return (
-    <ColorSchemeProvider
-      colorScheme={colorScheme}
-      toggleColorScheme={toggleColorScheme}
+    <MantineProvider
+      classNamesPrefix="sl"
+      defaultColorScheme="dark"
+      theme={mergeThemeOverrides(defaultTheme, themeOverride ?? {})}
+      {...rest}
     >
-      <MantineProvider
-        withCSSVariables
-        withGlobalStyles
-        withNormalizeCSS
-        theme={{ ...defaultTheme, colorScheme, ...themeOverride }}
-      >
-        {children}
-      </MantineProvider>
-    </ColorSchemeProvider>
+      {children}
+    </MantineProvider>
   );
-};
-
-ThemeProvider.displayName = "ThemeProvider";
+}

@@ -1,8 +1,5 @@
-export { Copyable, type CopyableProps } from "./Copyable";
-export {
-  ThemeProvider,
-  defaultTheme,
-  type ThemeProviderProps,
-} from "./ThemeProvider";
-export { ThemeToggle } from "./ThemeToggle";
-export { DebugPanel, type DebugPanelProps } from "./DebugPanel";
+export * from "./Shell";
+export * from "./Copyable";
+export * from "./ThemeProvider";
+export * from "./ThemeToggle";
+export * from "./DebugPanel";

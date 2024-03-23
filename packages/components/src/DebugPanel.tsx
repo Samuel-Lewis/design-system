@@ -1,12 +1,8 @@
+"use client";
+
 import React from "react";
 
-import {
-  Accordion,
-  Text,
-  Stack,
-  useMantineTheme,
-  createStyles,
-} from "@mantine/core";
+import { Accordion, Text, Stack, useMantineTheme } from "@mantine/core";
 import { IconAlertTriangle, IconBackhoe } from "@tabler/icons-react";
 
 export interface DebugPanelProps {
@@ -15,18 +11,6 @@ export interface DebugPanelProps {
   debugMode?: boolean;
   isError?: boolean;
 }
-
-const useStyle = createStyles(
-  (theme, { isError }: Pick<DebugPanelProps, "isError">) => ({
-    panel: {
-      ".mantine-Accordion-item": {
-        backgroundColor: isError
-          ? theme.fn.rgba(theme.colors.red[9], 0.25)
-          : "",
-      },
-    },
-  })
-);
 
 const isDevelopment =
   process.env.NODE_ENV === "development" ||
@@ -41,7 +25,6 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
   isError = false,
 }) => {
   const theme = useMantineTheme();
-  const { classes } = useStyle({ isError });
 
   if (!debugMode || !children) {
     return null;
@@ -54,7 +37,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
   );
 
   return (
-    <Accordion m="xs" variant="separated" className={classes.panel}>
+    <Accordion m="xs" variant="separated">
       <Accordion.Item value="default">
         <Accordion.Control icon={icon}>{title}</Accordion.Control>
         <Accordion.Panel>

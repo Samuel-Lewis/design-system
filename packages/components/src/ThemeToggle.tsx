@@ -1,35 +1,37 @@
-import React from "react";
+"use client";
 
 import {
-  Stack,
-  Switch,
   useMantineColorScheme,
-  useMantineTheme,
+  Switch,
+  useComputedColorScheme,
+  rem,
 } from "@mantine/core";
-import { IconSun, IconMoonStars } from "@tabler/icons-react";
+import { IconMoonStars, IconSun } from "@tabler/icons-react";
 
-export const ThemeToggle: React.FC = () => {
-  const theme = useMantineTheme();
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+export function ThemeToggle() {
+  const { setColorScheme } = useMantineColorScheme();
+  const computedColorScheme = useComputedColorScheme("dark", {
+    getInitialValueInEffect: true,
+  });
+
+  const sunIcon = (
+    <IconSun style={{ width: rem(16), height: rem(16) }} stroke={2.5} />
+  );
+
+  const moonIcon = (
+    <IconMoonStars style={{ width: rem(16), height: rem(16) }} stroke={2.5} />
+  );
 
   return (
-    <Stack>
-      <Switch
-        size="md"
-        color="gray.6"
-        checked={colorScheme === "light"}
-        onChange={() => {
-          toggleColorScheme();
-        }}
-        onLabel={
-          <IconSun size={16} stroke={2.5} color={theme.colors.yellow[4]} />
-        }
-        offLabel={
-          <IconMoonStars size={16} stroke={2.5} color={theme.colors.blue[6]} />
-        }
-      />
-    </Stack>
+    <Switch
+      size="lg"
+      color="dark.4"
+      onLabel={sunIcon}
+      offLabel={moonIcon}
+      checked={computedColorScheme === "dark"}
+      onChange={() => {
+        setColorScheme(computedColorScheme === "dark" ? "light" : "dark");
+      }}
+    />
   );
-};
-
-ThemeToggle.displayName = "ThemeToggle";
+}

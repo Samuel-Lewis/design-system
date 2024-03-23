@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 import { ActionIcon, CopyButton, Group, Paper, Tooltip } from "@mantine/core";
@@ -25,7 +27,7 @@ export const Copyable: React.FC<CopyableProps> = ({
 
   return (
     <Paper shadow="sm" p="xs" radius="md" withBorder>
-      <Group spacing="sm">
+      <Group gap="sm">
         {children}
         <CopyButton value={value} timeout={2000}>
           {({ copied, copy }) => (

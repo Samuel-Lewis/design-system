@@ -1,8 +1,6 @@
 import { customAlphabet } from "nanoid";
 import { alphanumeric } from "nanoid-dictionary";
 
-import type { Complete } from "@samuel-lewis/ts-helpers";
-
 export type SlugOptions = {
   /**
    * Delimiter to use between words
@@ -72,7 +70,7 @@ export type SlugOptions = {
   ignoreCharacters?: string[];
 };
 
-const toSlugDefaultOptions: Complete<SlugOptions> = {
+const toSlugDefaultOptions: Required<SlugOptions> = {
   separator: "-",
   ignoreCase: false,
   useCamel: false,
@@ -154,7 +152,7 @@ export type IdOptions = {
   alphabet?: string;
 };
 
-const toUniqueSlugDefaultOptions: Complete<IdOptions> = {
+const toUniqueSlugDefaultOptions: Required<IdOptions> = {
   idLength: 8,
   usePostfix: false,
   alphabet: alphanumeric,

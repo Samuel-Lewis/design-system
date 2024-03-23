@@ -18,7 +18,6 @@
   "ignoreDeps": [
     "@samuel-lewis/components",
     "@samuel-lewis/utils",
-    "@samuel-lewis/ts-helpers",
     "@samuel-lewis/tsconfig",
     "eslint-config-samuel-lewis"
   ],

@@ -6,10 +6,6 @@ A collection of packages used in my own personal projects.
 
 Reusable React components based on the [mantine.dev](https://mantine.dev/) library.
 
-### [`@samuel-lewis/ts-helpers`](/packages/ts-helpers) ![](https://img.shields.io/npm/v/@samuel-lewis/ts-helpers?style=flat-square&logo=npm)
-
-A collection of various Typescript helper types.
-
 ### [`@samuel-lewis/utils`](/packages/utils) ![](https://img.shields.io/npm/v/@samuel-lewis/utils?style=flat-square&logo=npm)
 
 A collection of various Javascript utilities.

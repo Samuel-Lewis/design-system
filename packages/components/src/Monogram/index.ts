@@ -1,2 +1,2 @@
-export { Monogram } from "./Monogram";
-export { MonogramAndName } from "./MonogramAndName";
+export { MonogramLogo } from "./MonogramLogo";
+export * from "./Monogram";

@@ -1,4 +1,4 @@
-import { Copyable } from "@samuel-lewis/components";
+import { Copyable } from "@samuel-lewis/components/src/Copyable";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {
@@ -12,13 +12,13 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     value: "1234",
-    children: "Your secret code is: 1234",
+    label: "Your secret code is: 1234",
   },
 };
 
 export const NoCopyValue: Story = {
   args: {
     value: "",
-    children: "Your secret code is: 1234",
+    label: "Your secret code is: 1234",
   },
 };

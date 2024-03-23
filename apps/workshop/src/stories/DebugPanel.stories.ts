@@ -1,4 +1,4 @@
-import { DebugPanel } from "@samuel-lewis/components";
+import { DebugPanel } from "@samuel-lewis/components/src/DebugPanel";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {

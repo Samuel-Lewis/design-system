@@ -10,6 +10,9 @@ import {
 import { defaultTheme } from "./theme";
 
 export interface ThemeProviderProps extends MantineProviderProps {
+  /**
+   * Combines with default theme. Use `createTheme` from mantine/core.
+   */
   themeOverride?: MantineThemeOverride;
 }
 

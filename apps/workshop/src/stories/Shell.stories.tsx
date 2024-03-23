@@ -1,4 +1,4 @@
-import { Shell } from "@samuel-lewis/components";
+import { Shell } from "@samuel-lewis/components/src/Shell";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {

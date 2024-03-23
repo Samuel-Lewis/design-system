@@ -1,4 +1,4 @@
-import { ThemeToggle } from "@samuel-lewis/components";
+import { ThemeToggle } from "@samuel-lewis/components/src/ThemeToggle";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta = {

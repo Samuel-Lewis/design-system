@@ -1,5 +1,12 @@
 # @samuel-lewis/tsconfig
 
+## 1.0.0
+
+### Minor Changes
+
+- 4f0294c: Bup tsup
+- 26af4c6: Change Copyable prop names. Added getOrDefault. Combined Monogram with MonogramAndName.
+
 ## 0.6.0
 
 ## 0.5.0

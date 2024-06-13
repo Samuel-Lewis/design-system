@@ -18,7 +18,7 @@
     "@samuel-lewis/components": "*",
     "@samuel-lewis/utils": "*",
     "@storybook/test": "^8.1.9",
-    "@tabler/icons-react": "^3.5.0",
+    "@tabler/icons-react": "^3.6.0",
     "@vitejs/plugin-react": "^4.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

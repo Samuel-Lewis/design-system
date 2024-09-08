@@ -1,10 +1,10 @@
 import{R as g,r as e}from"./index-l2PZgWEW.js";import{a as h}from"./use-isomorphic-effect-D_MaFt8y.js";function k(){return`mantine-${Math.random().toString(36).slice(2,11)}`}const v=g.useId||(()=>{});function x(){const t=v();return t?`mantine-${t.replace(/:/g,"")}`:""}function E(t){const r=x(),[o,n]=e.useState(r);return h(()=>{n(k())},[]),typeof t=="string"?t:typeof window>"u"?r:o}/**
- * @license @tabler/icons-react v3.14.0 - MIT
+ * @license @tabler/icons-react v3.15.0 - MIT
  *
  * This source code is licensed under the MIT license.
  * See the LICENSE file in the root directory of this source tree.
  */var y={outline:{xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:2,strokeLinecap:"round",strokeLinejoin:"round"},filled:{xmlns:"http://www.w3.org/2000/svg",width:24,height:24,viewBox:"0 0 24 24",fill:"currentColor",stroke:"none"}};/**
- * @license @tabler/icons-react v3.14.0 - MIT
+ * @license @tabler/icons-react v3.15.0 - MIT
  *
  * This source code is licensed under the MIT license.
  * See the LICENSE file in the root directory of this source tree.

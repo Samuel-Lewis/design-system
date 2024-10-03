@@ -17,7 +17,7 @@
     "test:watch": "turbo run test:watch"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.8",
+    "@changesets/cli": "^2.27.9",
     "eslint": "^8.57.1",
     "eslint-config-samuel-lewis": "*",
     "husky": "^9.1.6",

@@ -870,10 +870,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@mantine/core@^7.13.3":
-  version "7.13.3"
-  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.13.3.tgz#ad31f00de6d6eb52f0bc2ce1b95f79ac7ab25a67"
-  integrity sha512-IV8xSr6rFQefKr2iOEhYYkJ6rZTDEp71qNkAfn90toSNjgT/2bgnqOxXwxqZ3bwo9DyNOAbEDzs1EfdIzln5aA==
+"@mantine/core@^7.13.4":
+  version "7.13.4"
+  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.13.4.tgz#3ee9733d132deeb8d29b12d8e852b2c4f9b4bb7d"
+  integrity sha512-9I6+SqTq90pnI3WPmOQzQ1PL7IkhQg/5ft8Awhgut8tvk1VaKruDm/K5ysUG3ncHrP+QTI2UHYjNlUrux6HKlw==
   dependencies:
     "@floating-ui/react" "^0.26.9"
     clsx "^2.1.1"

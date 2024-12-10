@@ -1,4 +1,4 @@
-import{R as g,r as e}from"./index-DRjF_FHU.js";import{a as h}from"./use-isomorphic-effect-DlIeJm8l.js";function k(){return`mantine-${Math.random().toString(36).slice(2,11)}`}const v=g.useId||(()=>{});function x(){const t=v();return t?`mantine-${t.replace(/:/g,"")}`:""}function E(t){const r=x(),[o,n]=e.useState(r);return h(()=>{n(k())},[]),typeof t=="string"?t:typeof window>"u"?r:o}/**
+import{R as g,r as e}from"./index-DRjF_FHU.js";import{a as h}from"./use-isomorphic-effect-CtQhMHy6.js";function k(){return`mantine-${Math.random().toString(36).slice(2,11)}`}const v=g.useId||(()=>{});function x(){const t=v();return t?`mantine-${t.replace(/:/g,"")}`:""}function E(t){const r=x(),[o,n]=e.useState(r);return h(()=>{n(k())},[]),typeof t=="string"?t:typeof window>"u"?r:o}/**
  * @license @tabler/icons-react v3.24.0 - MIT
  *
  * This source code is licensed under the MIT license.

@@ -40,7 +40,7 @@
     "@typescript-eslint/parser": "^7.18.0",
     "eslint": "^8.57.1",
     "eslint-config-samuel-lewis": "*",
-    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.18",
     "eslint-plugin-storybook": "^0.11.2",
     "storybook": "^8.4.7",

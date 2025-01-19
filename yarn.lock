@@ -845,10 +845,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@mantine/core@^7.16.0":
-  version "7.16.0"
-  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.16.0.tgz#b21714c0d63443aea837137a81a64b6bb00c592d"
-  integrity sha512-lYYwa4Itz77uC8zQzdiKiKdz9Q01NBOYPZsotIKsP/Zqij0qhpsVxoJ8MK3P8IqFyLfThTMmR4sT1qlGfLTA9Q==
+"@mantine/core@^7.16.1":
+  version "7.16.1"
+  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-7.16.1.tgz#be9cb3f3288246664804c625f2340b6dbeed2548"
+  integrity sha512-HYdjCeMU3dUJbc1CrAAedeAASTG5kVyL/qsiuYh5b7BoG0qsRtK8WJxBpUjW6VqtJpUaE94c5tlBJ8MgAmPHTQ==
   dependencies:
     "@floating-ui/react" "^0.26.28"
     clsx "^2.1.1"
@@ -857,18 +857,18 @@
     react-textarea-autosize "8.5.6"
     type-fest "^4.27.0"
 
-"@mantine/form@^7.16.0":
-  version "7.16.0"
-  resolved "https://registry.yarnpkg.com/@mantine/form/-/form-7.16.0.tgz#13da5b5fe9dc5b952b9d4ee16e626e65cd3987e8"
-  integrity sha512-PUxX5v8XMoNwjFdZbns4dDcQf8U9lIfagFsDGz3KKStgsuBcgnn97/MDP6SpsOHV3g7AGEJoF65+ax1fMOkkNA==
+"@mantine/form@^7.16.1":
+  version "7.16.1"
+  resolved "https://registry.yarnpkg.com/@mantine/form/-/form-7.16.1.tgz#6c15fed491149db4795c314b7f5a9e3b8ec682cb"
+  integrity sha512-SZfOlmO14oAYdqo3SJKJlPrSNaeWyTPIPV/cur/4sPf114cAyggEZHoHJEjy2yA8UccfwYZx39yWrwxQCb8J8w==
   dependencies:
     fast-deep-equal "^3.1.3"
     klona "^2.0.6"
 
-"@mantine/hooks@^7.16.0":
-  version "7.16.0"
-  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.16.0.tgz#5640abd7a580b02a026ff9610a50e8ce4a595569"
-  integrity sha512-8KxrhckesbrV6tyOndm6fJ+jSKA4KX/67ppDFlfYMMbV6Yh+s0zRO4KLi2uCtl6tgckQd2/zDzX3kQk+VYKqDA==
+"@mantine/hooks@^7.16.1":
+  version "7.16.1"
+  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-7.16.1.tgz#3956b277ac19e456a42f8dceea4933ac4a8d7cb9"
+  integrity sha512-+hER8E4d2ByfQ/DKIXGM3Euxb7IH5ArSjzzzoF21sG095iXIryOCob22ZanrmiXCoAzKKdxqgVj4Di67ikLYSQ==
 
 "@manypkg/find-root@^1.1.0":
   version "1.1.0"

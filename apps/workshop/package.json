@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
-    "@mantine/core": "^7.16.3",
-    "@mantine/form": "^7.16.3",
-    "@mantine/hooks": "^7.16.3",
+    "@mantine/core": "^7.17.0",
+    "@mantine/form": "^7.17.0",
+    "@mantine/hooks": "^7.17.0",
     "@samuel-lewis/components": "*",
     "@samuel-lewis/utils": "*",
     "@storybook/test": "^8.5.6",

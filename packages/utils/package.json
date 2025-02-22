@@ -29,7 +29,7 @@
     "access": "public"
   },
   "dependencies": {
-    "nanoid": "^5.1.0",
+    "nanoid": "^5.1.2",
     "nanoid-dictionary": "^5.0.0-beta.1"
   }
 }

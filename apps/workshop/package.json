@@ -17,7 +17,7 @@
     "@mantine/hooks": "^7.17.2",
     "@samuel-lewis/components": "*",
     "@samuel-lewis/utils": "*",
-    "@storybook/test": "^8.6.8",
+    "@storybook/test": "^8.6.9",
     "@tabler/icons-react": "^3.31.0",
     "@vitejs/plugin-react": "^4.3.4",
     "react": "^18.3.1",
@@ -28,12 +28,12 @@
   "devDependencies": {
     "@samuel-lewis/components": "*",
     "@samuel-lewis/tsconfig": "*",
-    "@storybook/addon-essentials": "^8.6.8",
-    "@storybook/addon-interactions": "^8.6.8",
-    "@storybook/addon-links": "^8.6.8",
-    "@storybook/blocks": "^8.6.8",
-    "@storybook/react": "^8.6.8",
-    "@storybook/react-vite": "^8.6.8",
+    "@storybook/addon-essentials": "^8.6.9",
+    "@storybook/addon-interactions": "^8.6.9",
+    "@storybook/addon-links": "^8.6.9",
+    "@storybook/blocks": "^8.6.9",
+    "@storybook/react": "^8.6.9",
+    "@storybook/react-vite": "^8.6.9",
     "@types/react": "^18.3.20",
     "@types/react-dom": "^18.3.5",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
@@ -43,7 +43,7 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.19",
     "eslint-plugin-storybook": "^0.11.6",
-    "storybook": "^8.6.8",
+    "storybook": "^8.6.9",
     "typescript": "^5.8.2"
   }
 }

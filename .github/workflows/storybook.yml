@@ -19,7 +19,7 @@ jobs:
       - name: 🔧 Setup Node.js 18.x
         uses: actions/setup-node@v4
         with:
-          node-version: 18.20.8
+          node-version: 22.15.1
 
       - name: 📦 Install Dependencies
         run: yarn

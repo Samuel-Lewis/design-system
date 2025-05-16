@@ -21,7 +21,7 @@
     "@samuel-lewis/tsconfig": "*",
     "eslint": "^8.57.1",
     "eslint-config-samuel-lewis": "*",
-    "tsup": "^8.4.0",
+    "tsup": "^8.5.0",
     "typescript": "^5.8.3",
     "vitest": "^1.6.1"
   },

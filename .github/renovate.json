@@ -22,15 +22,16 @@
     "eslint-config-samuel-lewis"
   ],
   "packageRules": [
-    "schedule": ["* * 1 * *"],
     {
       "matchPackagePatterns": ["@mantine/*"],
       "groupName": "mantine",
       "groupSlug": "mantine"
+      "schedule": ["* * 1 * *"],
     },
     {
       "matchDepTypes": ["peerDependencies"],
-      "rangeStrategy": "widen"
+      "rangeStrategy": "widen",
+      "schedule": ["* * 1 * *"],
     }
   ]
 }

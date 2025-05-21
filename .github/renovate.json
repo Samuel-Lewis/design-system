@@ -22,6 +22,7 @@
     "eslint-config-samuel-lewis"
   ],
   "packageRules": [
+    "schedule": ["* * 1 * *"],
     {
       "matchPackagePatterns": ["@mantine/*"],
       "groupName": "mantine",
